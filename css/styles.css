@@ -16,18 +16,60 @@
         @apply bg-green-200 text-gray-800 
       }
 
-    
-}
-
-.header-container {
-  background-image: url('img/header.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.header {
-  background-color: rgba(0, 0, 0, .3);
+      .header-container {
+        background-image: url('img/header.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      
+      .header {
+        background-color: rgba(0, 0, 0, .3);
+      }
+      
+      .product-img {
+        height: 40rem;
+        width: 70rem;
+        object-fit: cover;
+        overflow: hidden;
+        @apply  cursor-pointer p-1 ;
+      }
+      
+      .add-to-cart-btn{
+        @apply bg-green-200 text-2xl font-medium w-full p-5 mt-5 border-2 border-green-700 hover:bg-green-400;
+      }
+      
+      .price {
+        @apply bg-green-200 text-black text-3xl p-3 m-3 ml-0 rounded-3xl font-bold float-right;
+      }
+      
+      .line-through-price {
+        @apply text-black text-2xl p-3 my-3 mr-0 rounded-3xl line-through font-medium float-right;
+      }
+      
+      .cone {
+        @apply bg-gray-100 text-black text-xl p-3 m-3 ml-0 rounded-3xl font-medium float-left cursor-pointer;
+      }
+      
+      .card-container {
+        @apply max-w-3xl  shadow-2xl hover:bg-gray-50 mx-auto my-5;
+      }
+      
+      .product-header {
+        @apply p-3 m-3 mt-0 text-5xl font-medium cursor-pointer overflow-ellipsis overflow-hidden line-clamp-1;
+      }
+      
+      .product-details {
+        @apply text-black text-2xl font-medium mx-5 text-left overflow-ellipsis overflow-hidden line-clamp-4;
+      }
+      
+      .frozen {
+        @apply bg-blue-200 text-black text-xl p-3 m-3 ml-3 rounded-3xl font-medium float-left cursor-pointer;
+      }
+      
+      .product-type {
+        @apply text-black text-xl p-3 m-3 ml-0 rounded-3xl font-medium float-left cursor-pointer;
+      }
 }
 

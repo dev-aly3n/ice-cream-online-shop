@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.2.0",
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.6",
     "postcss-cli": "^8.3.1",

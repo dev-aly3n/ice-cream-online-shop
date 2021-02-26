@@ -11,8 +11,12 @@
 </head>
 
 <body>
+
+
+
+            <!-- top menu navbar -->
     <section id="top-menu">
-        <!-- top menu navbar -->
+
         <div class="overflow-hidden bg-gray-700 align-middle">
             <img class="float-left w-20 h-20 my-2 mx-10 cursor-pointer transform rotate-12" src="img/logo2.png"
                 href="#">
@@ -26,8 +30,13 @@
         </div>
     </section>
 
+
+
+
+
+
+            <!-- top banner/header -->
     <section id="header">
-        <!-- top banner/header -->
         <div class="header-container ">
             <div class="header">
 
@@ -46,15 +55,18 @@
                     </br> Yes, this is real life.
                     </br> Now with flat-rate shipping
                     </br> and guaranteed frozen delivery. </p>
-
             </div>
         </div>
     </section>
 
+
+
+
+
+            <!-- features of the shop like delivery , free shipping or... -->
     <section id="features">
-        <!-- features of the shop like delivery , free shipping or... -->
-        <div id="features-container"
-            class="flex flex-wrap flex-row justify-items-center items-center bg-gradient-to-r from-green-300 via-green-100 to-blue-300 ">
+        <div id="features-container" class="flex flex-wrap flex-row justify-items-center items-center bg-gradient-to-r from-green-300 via-green-100
+             to-blue-300 ">
             <div id="card-container" class=" w-96 h-64  m-auto ">
                 <i class="fas fa-shipping-fast fa-7x ml-32 mt-10"></i>
                 </br>
@@ -97,21 +109,156 @@
         </div>
     </section>
 
+
+
+
+
     <!-- products -->
-    <section id="products">
-        <h1 class="p-24 m-24 text-3xl">
-            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
-            , graphic or web designs. The passage is attributed to an unknown typesetter in the 15
-            th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Ma
-            lorum for use in a type specimen book.
+    <section id="products" class="">
+        <h1 class="p-12 m-auto text-7xl text-center font-bold font-serif">
+            Our Tasty Ice Creams
         </h1>
-        
+        <div id="products-grid"
+            class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 m-auto py-10 self-center items-center gap-2">
 
+            <div class="card-container">
+                <img src="img/products/1.jpg" class="product-img">
+                <h3 class="product-header">
+                    Vanilla ice cream cone</h3>
+                <p class="product-details">
+                    Vanilla Reduced Fat Ice Cream
+                    Ingredients: Milk, Sugar, Cream, Corn Syrup, Natural Flavor, Mono and Diglycerides, Cellulose Gum,
+                    Guar Gum, Carrageenan, Vitamin A Palmitate.
+                    </br>
+                    Ingredients: Enriched Flour (Wheat Flour, Niacin, Reduced Iron, Thiamin Mononitrate, Riboflavin,
+                    Folic Acid),
+                    Tapioca Starch, Sugar, Canola Oil or a blend of Soybean Oil, Palm Oil and Soy Lecithin, Leavening
+                    (Baking Soda,
+                    Ammonium Bicarbonate), Salt, Annatto Extract (Color), Natural Flavor, Corn Syrup.
+                    Contains: Wheat, Soy.</p>
+                <!-- ***read more button*** <span class="bg-gray-300 hover:bg-gray-600 hover:text-white text-black
+                 inline-block text-xl p-3 m-3 ml-3 mb-6 mt-0 rounded-2xl font-medium cursor-pointer">read more!</span>
+            </br> -->
+                <span class="frozen">#frozen</span>
+                <span class="bg-yellow-100 product-type">#vanilla</span>
+                <span class="cone">#cone</span>
+                <span class="price">29.99$</span>
+                <span class="line-through-price">35.50$</span>
+                </br>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+
+            <div class="card-container">
+                <img src="img/products/2.jpg" class="product-img">
+                <h3 class="product-header">
+                    Truffle ice cream cone</h3>
+                <p class="product-details">
+                    A delightful blend of chocolate and crunch,
+                    these bite-sized treats
+                    feature a creamy flavored chocolate truffle center inside the light sweetness of a waffle cone.
+                    Packaged in a 1-gallon reusable glass apothecary jar filled to the brim with 75 individually wrapped
+                    truffle cones. Perfect for
+                    parties, luncheons, wedding favors or in place of the family cookie jar. Handmade in Ohio.</p>
+                <span class="frozen">#frozen</span>
+                <span class="bg-blue-400 product-type">#Truffle</span>
+                <span class="cone">#cone</span>
+                <span class="price">37.49$</span>
+                <span class="line-through-price">42.00$</span>
+                </br>
+                <button class=" add-to-cart-btn">Add to Cart</button>
+            </div>
+
+
+            <div class="card-container">
+                <img src="img/products/9.jpg" class="product-img">
+                <h3 class="product-header">
+                    Strawberry ice cream scoop</h3>
+                <p class="product-details">
+                    This Homemade Strawberry
+                    Ice Cream is creamy, dreamy, and made with fresh strawberries. It’s an old fashioned strawberry ice
+                    cream recipe that makes it
+                    the perfect spring or summer dessert. The fresh strawberry flavour in this will blow your mind! A no
+                    churn Strawberry Ice Cream
+                    that’s incredibly creamy</p>
+                <span class="frozen">#frozen</span>
+                <span class="bg-pink-300 product-type">#strawberry</span>
+                <span class="cone">#scoop</span>
+                <span class="price">12.50$</span>
+                <span class="line-through-price">15.00$</span>
+                </br>
+                <button class=" add-to-cart-btn">Add to Cart</button>
+            </div>
+
+
+            <div class="card-container">
+                <img src="img/products/6.jpg" class="product-img">
+                <h3 class="product-header">
+                    Rainbow ice cream cone</h3>
+                <p class="product-details">
+                    Candyfloss flavour ice cream in a
+                    wafer cone coated with chocolate flavour coating, rippled and topped with strawberry flavoured sauce
+                    and coloured sugar pieces.
+                    Perfect to keep all of the family satisfied after tea. Candyfloss flavour ice cream rippled and
+                    topped with strawberry flavoured
+                    sauce and topped with vibrant sugar pieces all in a crisp pink wafer cone.
+                    Candyfloss ice cream with strawberry sauce centre and sugar crunch</p>
+                <span class="frozen">#frozen</span>
+                <span class="bg-purple-100 product-type">#rainbow</span>
+                <span class="cone">#cone</span>
+                <span class="price">18.00$</span>
+                <span class="line-through-price">25.50$</span>
+                </br>
+                <button class=" add-to-cart-btn">Add to Cart</button>
+            </div>
+
+
+            <div class="card-container">
+                <img src="img/products/7.jpg" class="product-img">
+                <h3 class="product-header">
+                    Three scoop ice cream</h3>
+                <p class="product-details">
+                    A delightful blend of chocolate and crunch,
+                    these bite-sized treats
+                    feature a creamy flavored chocolate truffle center inside the light sweetness of a waffle cone.
+                    Packaged in a 1-gallon reusable glass apothecary jar filled to the brim with 75 individually wrapped
+                    truffle cones. Perfect for
+                    parties, luncheons, wedding favors or in place of the family cookie jar. Handmade in Ohio.</p>
+                <span class="frozen">#frozen</span>
+                <span class="bg-gray-50 product-type">#custom</span>
+                <span class="cone">#scoop</span>
+                <span class="price">15.50$</span>
+                <span class="line-through-price">21.50$</span>
+                </br>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+
+            <div class="card-container">
+                <img src="img/products/4.jpg" class="product-img">
+                <h3 class="product-header">
+                    Mint ice cream</h3>
+                <p class="product-details">
+                    3 cups of fresh
+                    spearmint leaves (not stems), rinsed, drained, packed
+                    1 cup milk
+                    2 cups heavy cream (divided, 1 cup and 1 cup)
+                    2/3 cup sugar
+                    A pinch of salt
+                    6 egg yolks
+                    6 ounces semisweet chocolate or dark chocolate, chopped fine, keep in the freezer until used.
+                    The taste of the ice cream using fresh mint really is out of this world, so if you can
+                    get your hands on fresh mint, I highly recommend using it for this ice cream.</p>
+                <span class="frozen">#frozen</span>
+                <span class="bg-green-200 product-type">#mint</span>
+                <span class="cone">#scoop</span>
+                <span class="price">10.99$</span>
+                <span class="line-through-price">14.50</span>
+                </br>
+                <button class=" add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
     </section>
-    
-
-
 
 </body>
-
 </html>
