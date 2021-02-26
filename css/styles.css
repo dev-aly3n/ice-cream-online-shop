@@ -1,0 +1,33 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+@layer components {
+
+    .top-menu-links {
+        @apply float-left align-middle text-gray-200 text-center px-16 py-8 text-3xl no-underline font-normal hover:bg-green-200 hover:text-gray-800
+      }
+      
+      a.active {
+        @apply bg-green-200 text-gray-800 
+      }
+
+    
+}
+
+.header-container {
+  background-image: url('img/header.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, .3);
+}
+

@@ -1,0 +1,23 @@
+{
+  "name": "shoppingcart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-nested": "^5.0.3",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {
+    "tailwindcss-pseudo-elements": "^1.5.1"
+  },
+  "scripts": {
+    "build": "postcss css/styles.css -o build/styles.css",
+    "watch": "postcss css/styles.css -o build/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
