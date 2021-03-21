@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4835bc47dd.js" crossorigin="anonymous"></script>
     <title>fucking sopping cart</title>
 </head>
@@ -15,17 +17,49 @@
     <!-- top menu navbar -->
     <section id="top-menu">
 
-        <div class="overflow-hidden bg-gray-700 align-middle">
+        <nav>
+            <div class="logo">
+                <h1>Aly3n's Ice Cream</h1>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a  href="#">Home</a></li>
+                <li><a href="#">Blog</a> </li>
+                <li><a href="#">Store</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+                <li><a href="#">Our story</a> </li>
+                <li><a href="#">Store</a> </li>
+            </ul>
+
+            <div class="burger">
+                <div class="line1"> </div>
+                <div class="line2"> </div>
+                <div class="line3"> </div>
+            </div>
+
+
+        </nav>
+
+
+
+
+
+
+        <!-- <div class="overflow-hidden bg-gray-700 align-middle , ">
             <img class="float-left w-20 h-20 my-2 mx-10 cursor-pointer transform rotate-12" src="img/logo2.png"
                 href="#">
-            <a class="top-menu-links active" href="#">Home</a>
-            <a class="top-menu-links" href="#">Blog</a>
-            <a class="top-menu-links" href="#">Contact</a>
-            <a class="top-menu-links" href="#">Our story</a>
-            <h2 class="float-right font-medium text-4xl my-6 mr-10 ml-3 text-white">Aly3n Ice Cream</h2>
+            <a style="color:#a7f3d0;" class="mx-auto lg:hidden cursor-pointer" onclick="menuBar()" href="javascript:void(0);"><i class="fa fa-bars fa-4x  mr-5 my-3  opacity-70 "
+                    aria-hidden="true"></i></a>
+            <div id="menu-bar" class="menu-bar">
+                <a class="active" href="#">Home</a>
+                <a  href="#">Blog</a>
+                <a  href="#">Contact</a>
+                <a  href="#">Our story</a>
+            </div>
+            <h2 class="float-right font-bold lg:font-medium text-2xl lg:text-4xl my-6 mr-10 ml-3 text-white">Aly3n Ice
+                Cream</h2>
             <img class="float-right w-20 my-2 mr-5 cursor-pointer border-green-200 border-2 rounded-full hover:bg-gray-800
          hover:border-gray-300 animate-pulse" src="img/cart.png" href="#">
-        </div>
+        </div> -->
     </section>
 
 
@@ -39,10 +73,11 @@
                     </br> within 15 minutes!</h3>
                 <div class="sm:ml-96 w-max cursor-pointer mt-20">
                     <h3 class="text-4xl bg-green-200 text-black text-center py-5 m-2 pl-14 pr-10 border-2
-                border-green-600 rounded-3xl font-medium rounded-l-none float-right shadow-2xl mt-4"> Order Now!</h3>
+                border-green-600 rounded-3xl font-medium rounded-l-none float-right shadow-2xl mt-4 hover:bg-green-500
+                hover:border-green-200"> Order Now!</h3>
 
                     <i class="fas fa-shopping-basket fa-4x p-3 m-2 bg-green-200 rounded-full -mr-14
-                border-green-600 border-4 shadow-2xl ml-52"></i>
+                border-green-600 border-4 shadow-2xl ml-52 hover:bg-green-500 hover:border-green-200"></i>
                 </div>
                 <p class="text-white text-4xl font-medium pt-20 pl-36 pb-20">Aly3n Ice Creams delivered perfectly frozen
                     </br> right to your doorstep.
@@ -300,6 +335,19 @@
 
     </section>
 
+
+    <script>
+        function menuBar() {
+            let x = document.getElementById("menu-bar");
+            if (x.className === "menu-bar") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu-bar";
+            }
+        }
+    </script>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
