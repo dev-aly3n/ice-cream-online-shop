@@ -608,7 +608,15 @@ nav {
 .nav-links {
   width: 40%;
   display: flex;
-  justify-content: space-around;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.nav-links li {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 .nav-links li:hover {
@@ -617,6 +625,7 @@ nav {
 }
 
 .nav-links li {
+  cursor: pointer;
   list-style-type: none;
   text-align: center;
 }
@@ -649,16 +658,12 @@ nav {
 }
 
 @media screen and (max-width:1025px) {
-  * {
+  body {
     overflow-x: hidden;
   }
 }
 
 @media screen and (max-width:1024px) {
-  * {
-    overflow-x: hidden;
-  }
-
   .nav-links {
     width: 60%;
     right: 0px;

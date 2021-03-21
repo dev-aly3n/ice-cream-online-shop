@@ -20,17 +20,21 @@
 
   .nav-links {
     width: 40%;
-    @apply flex justify-around;
+    @apply flex  mx-0;
   }
 
   .nav-links li {
-     
-   @apply list-none hover:bg-green-900 text-center;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+   @apply list-none hover:bg-green-900 text-center  cursor-pointer ;
 
   }
 
   .nav-links .active {
-   @apply bg-green-900;
+
+   @apply bg-green-900 ;
   }
 
   .nav-links a {
@@ -50,16 +54,12 @@
   }
 
   @media screen and (max-width:1025px) {
-    * {
+    body {
       overflow-x: hidden;
     }
   }
 
   @media screen and (max-width:1024px) {
-    * {
-      overflow-x: hidden;
-    }
-
     .nav-links {
       width: 60%;
       right: 0px;
