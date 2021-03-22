@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4835bc47dd.js" crossorigin="anonymous"></script>
     <title>fucking sopping cart</title>
 </head>
@@ -17,69 +17,58 @@
     <!-- top menu navbar -->
     <section id="top-menu">
 
-        <nav>
-            <div class="logo">
+        <nav id="navigation" class="navigation">
+
+            <div class="logo flex justify-around items-center">
+                <img class="float-left w-16 h-16 my-2 mx-2 cursor-pointer transform rotate-12" src="img/logo2.png"
+                href="#">
                 <h1>Aly3n's Ice Cream</h1>
             </div>
-            <ul class="nav-links">
+
+            <ul class="nav-links navigation">
                 <li class="active"><a  href="#">Home</a></li>
                 <li><a href="#">Blog</a> </li>
                 <li><a href="#">Store</a> </li>
                 <li><a href="#">Contact Us</a> </li>
                 <li><a href="#">Our story</a> </li>
-                <li><a href="#">Store</a> </li>
             </ul>
+            
+          
 
-            <div class="burger">
-                <div class="line1"> </div>
-                <div class="line2"> </div>
-                <div class="line3"> </div>
+            <div class="navigation burger cursor-pointer mr-9">
+                <div class="navigation line1"> </div>
+                <div class="navigation line2"> </div>
+                <div class="navigation line3"> </div>
+            </div>
+
+            <div>
+                <img class="float-right w-16 my-2 mr-5 cursor-pointer border-green-200 border-2 rounded-full hover:bg-gray-800
+         hover:border-gray-300 animate-pulse" src="img/cart.png" href="#">
             </div>
 
 
         </nav>
 
-
-
-
-
-
-        <!-- <div class="overflow-hidden bg-gray-700 align-middle , ">
-            <img class="float-left w-20 h-20 my-2 mx-10 cursor-pointer transform rotate-12" src="img/logo2.png"
-                href="#">
-            <a style="color:#a7f3d0;" class="mx-auto lg:hidden cursor-pointer" onclick="menuBar()" href="javascript:void(0);"><i class="fa fa-bars fa-4x  mr-5 my-3  opacity-70 "
-                    aria-hidden="true"></i></a>
-            <div id="menu-bar" class="menu-bar">
-                <a class="active" href="#">Home</a>
-                <a  href="#">Blog</a>
-                <a  href="#">Contact</a>
-                <a  href="#">Our story</a>
-            </div>
-            <h2 class="float-right font-bold lg:font-medium text-2xl lg:text-4xl my-6 mr-10 ml-3 text-white">Aly3n Ice
-                Cream</h2>
-            <img class="float-right w-20 my-2 mr-5 cursor-pointer border-green-200 border-2 rounded-full hover:bg-gray-800
-         hover:border-gray-300 animate-pulse" src="img/cart.png" href="#">
-        </div> -->
     </section>
 
 
     <!-- top banner/header -->
     <section id="header">
-        <div class="header-container ">
+        <div class="header-container" style=" font-family: 'Merienda', cursive;">
             <div class="header">
 
-                <h3 class="text-white text-5xl font-medium pt-72 pl-32">Can't wait in line? Look no further. </br>
+                <h3 class="text-white text-5xl font-medium pt-36 px-10 lg:pl-32 lg:pt-72 leading-tight">Can't wait in line? Look no further. </br>
                     Your tasty Ice Cream will be there
                     </br> within 15 minutes!</h3>
-                <div class="sm:ml-96 w-max cursor-pointer mt-20">
+                <div class="lg:ml-96 w-max cursor-pointer mt-20">
                     <h3 class="text-4xl bg-green-200 text-black text-center py-5 m-2 pl-14 pr-10 border-2
                 border-green-600 rounded-3xl font-medium rounded-l-none float-right shadow-2xl mt-4 hover:bg-green-500
                 hover:border-green-200"> Order Now!</h3>
 
                     <i class="fas fa-shopping-basket fa-4x p-3 m-2 bg-green-200 rounded-full -mr-14
-                border-green-600 border-4 shadow-2xl ml-52 hover:bg-green-500 hover:border-green-200"></i>
+                border-green-600 border-4 shadow-2xl ml-24 lg:ml-52"></i>
                 </div>
-                <p class="text-white text-4xl font-medium pt-20 pl-36 pb-20">Aly3n Ice Creams delivered perfectly frozen
+                <p class="text-white text-4xl font-medium pt-20 px-10 lg:pl-36 pb-20 leading-tight">Aly3n Ice Creams delivered perfectly frozen
                     </br> right to your doorstep.
                     </br> Yes, this is real life.
                     </br> Now with flat-rate shipping

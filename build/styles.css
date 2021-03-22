@@ -585,9 +585,11 @@ video {
   }
 }
 
+/* this is the start of navbar css */
+
 nav {
   min-height: 8vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Merienda', cursive;
   --tw-bg-opacity: 1;
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
   display: flex;
@@ -621,26 +623,36 @@ nav {
 
 .nav-links li:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(6, 78, 59, var(--tw-bg-opacity));
+  background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
 }
 
 .nav-links li {
   cursor: pointer;
   list-style-type: none;
   text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(209, 250, 229, var(--tw-text-opacity));
+}
+
+.nav-links li:hover {
+  --tw-text-opacity: 1;
+  color: rgba(31, 41, 55, var(--tw-text-opacity));
 }
 
 .nav-links .active {
   --tw-bg-opacity: 1;
-  background-color: rgba(6, 78, 59, var(--tw-bg-opacity));
-}
-
-.nav-links a {
-  font-weight: 500;
+  background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+  font-weight: 700;
   font-size: 1.5rem;
   line-height: 2rem;
   --tw-text-opacity: 1;
-  color: rgba(167, 243, 208, var(--tw-text-opacity));
+  color: rgba(31, 41, 55, var(--tw-text-opacity));
+}
+
+.nav-links a {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
   text-decoration: none;
   letter-spacing: 0.05em;
 }
@@ -671,7 +683,7 @@ nav {
     top: 8vh;
     width: 50%;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.4s ease-in;
     --tw-bg-opacity: 1;
     background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
     display: flex;
@@ -682,19 +694,12 @@ nav {
 
   .nav-links li {
     opacity: 0;
-  }
-
-  .nav-links li:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(6, 78, 59, var(--tw-bg-opacity));
-  }
-
-  .nav-links li {
     text-align: center;
   }
 
   .burger {
     display: block;
+    padding: 5px;
   }
 }
 
@@ -713,6 +718,8 @@ nav {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
+/* this is the end of  the navbar css */
 
 .header-container {
   background-image: url('img/header.jpg');
@@ -31519,6 +31526,8 @@ nav {
   -webkit-line-clamp: unset;
 }
 
+/* animation for navbar css start*/
+
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -31542,6 +31551,8 @@ nav {
     transform: translateX(0px)
   }
 }
+
+/* animation for navbar css stop */
 
 @media (min-width: 640px) {
   .sm\:container {
