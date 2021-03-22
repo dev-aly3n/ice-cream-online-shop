@@ -669,13 +669,13 @@ nav {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width:1025px) {
+@media screen and (max-width:950px) {
   body {
     overflow-x: hidden;
   }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:950px) {
   .nav-links {
     width: 60%;
     right: 0px;
