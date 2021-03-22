@@ -889,6 +889,92 @@ nav {
   color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
+.card-dropdown {
+  position: relative;
+}
+
+.card-dropdown #shopping-cart{
+  display: none;
+}
+
+.card-dropdown:hover #shopping-cart{
+  right:-50px;
+  top:7vh;
+  z-index: 1;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+  -webkit-animation-name: navCartFade;
+          animation-name: navCartFade;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+  border-radius: 0.75rem;
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  position: absolute;
+}
+
+.remove-from-cart {
+  --tw-bg-opacity: 1;
+  background-color: rgba(254, 202, 202, var(--tw-bg-opacity))
+}
+
+.remove-from-cart:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+}
+
+.remove-from-cart {
+  border-radius: 9999px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(220, 38, 38, var(--tw-text-opacity));
+}
+
+.remove-from-cart:hover {
+  --tw-text-opacity: 1;
+  color: rgba(254, 202, 202, var(--tw-text-opacity));
+}
+
+.empty-cart-btn {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 165, 165, var(--tw-bg-opacity));
+}
+
+.empty-cart-btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+}
+
+.empty-cart-btn {
+  --tw-border-opacity: 1;
+  border-color: rgba(127, 29, 29, var(--tw-border-opacity));
+  border-radius: 1rem;
+  border-width: 2px;
+  display: block;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.empty-cart-btn:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.empty-cart-btn {
+  width: 100%;
+}
+
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -31553,6 +31639,30 @@ nav {
 }
 
 /* animation for navbar css stop */
+
+@-webkit-keyframes navCartFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
+
+@keyframes navCartFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
 
 @media (min-width: 640px) {
   .sm\:container {

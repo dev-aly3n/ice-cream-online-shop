@@ -33,9 +33,24 @@
                 <li><a href="#">Our story</a> </li>
             </ul>
             
-            <div>
-                <img class="float-right w-16 my-2 mr-5 cursor-pointer border-green-200 border-2 rounded-full hover:bg-gray-800
-         hover:border-gray-300 animate-pulse" src="img/cart.png" href="#">
+            <div class="card-dropdown">
+                <img class="float-right w-20 cursor-pointer border-green-200 border-2 rounded-full hover:bg-gray-800
+         hover:border-gray-300 animate-pulse relative" src="img/cart.png" href="#" >
+         <div id="shopping-cart">
+            <table id="cart-content" style="width:100%;">
+                <thead>
+                    <tr class="text-white text-xl">
+                        <th>image </br> <hr></th>
+                        <th>name </br> <hr></th>
+                        <th>#</br> <hr></th>
+                        <th>price</br> <hr></th>
+                        <th class="w-2"></th>
+                    </tr>
+                </thead>
+                <tbody class="text-white"></tbody>
+            </table>
+            <a href="#" id="empty-cart" class="empty-cart-btn">empty the cart</a>
+        </div>
             </div>
 
             <div class="navigation burger cursor-pointer mr-9 sm:mr-0">
@@ -43,10 +58,6 @@
                 <div class="navigation line2"> </div>
                 <div class="navigation line3"> </div>
             </div>
-
-            
-
-
         </nav>
 
     </section>
@@ -157,7 +168,7 @@
                 <span class="price">29.99$</span>
                 <span class="line-through-price">35.50$</span>
                 </br>
-                <button class="add-to-cart-btn">Add to Cart</button>
+                <button class="add-to-cart-btn" data-id="01">Add to Cart</button>
             </div>
 
 
@@ -178,7 +189,7 @@
                 <span class="price">37.49$</span>
                 <span class="line-through-price">42.00$</span>
                 </br>
-                <button class=" add-to-cart-btn">Add to Cart</button>
+                <button class=" add-to-cart-btn" data-id="02">Add to Cart</button>
             </div>
 
 
@@ -199,7 +210,7 @@
                 <span class="price">12.50$</span>
                 <span class="line-through-price">15.00$</span>
                 </br>
-                <button class=" add-to-cart-btn">Add to Cart</button>
+                <button class=" add-to-cart-btn" data-id="03">Add to Cart</button>
             </div>
 
 
@@ -221,7 +232,7 @@
                 <span class="price">18.00$</span>
                 <span class="line-through-price">25.50$</span>
                 </br>
-                <button class=" add-to-cart-btn">Add to Cart</button>
+                <button class=" add-to-cart-btn" data-id="04">Add to Cart</button>
             </div>
 
 
@@ -242,7 +253,7 @@
                 <span class="price">15.50$</span>
                 <span class="line-through-price">21.50$</span>
                 </br>
-                <button class="add-to-cart-btn">Add to Cart</button>
+                <button class="add-to-cart-btn" data-id="05">Add to Cart</button>
             </div>
 
 
@@ -267,7 +278,7 @@
                 <span class="price">10.99$</span>
                 <span class="line-through-price">14.50</span>
                 </br>
-                <button class=" add-to-cart-btn">Add to Cart</button>
+                <button class=" add-to-cart-btn" data-id="06">Add to Cart</button>
             </div>
         </div>
     </section>

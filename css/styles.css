@@ -162,7 +162,36 @@
   @apply text-black text-xl p-3 m-3 ml-0 rounded-3xl font-medium float-left cursor-pointer;
 }
 
+.card-dropdown {
+  position: relative;
 }
+
+.card-dropdown #shopping-cart{
+  display: none;
+}
+.card-dropdown:hover #shopping-cart{
+  right:-50px;
+  top:7vh;
+  z-index: 1;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+  animation-name: navCartFade;
+  animation-duration: 0.5s; 
+   @apply bg-gray-700 absolute block rounded-xl text-xl;
+}
+
+.remove-from-cart {
+  @apply text-red-600 text-xl px-2 bg-red-200 rounded-full hover:bg-red-600 hover:text-red-200
+}
+
+.empty-cart-btn {
+  @apply  text-2xl font-medium  p-5 mt-5 border-2  bg-red-300 hover:bg-red-600 border-red-900
+   hover:text-white rounded-2xl w-full block text-center;
+}
+
+}
+
 
 /* animation for navbar css start*/
 @keyframes navLinkFade {
@@ -177,3 +206,16 @@
   }
 }
 /* animation for navbar css stop */
+
+
+@keyframes navCartFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
