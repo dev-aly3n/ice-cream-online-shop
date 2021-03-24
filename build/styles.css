@@ -889,21 +889,21 @@ nav {
   color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
-.card-dropdown {
+.cart-dropdown {
   position: relative;
 }
 
-.card-dropdown #shopping-cart{
+.cart-dropdown #shopping-cart{
   display: none;
 }
 
-.card-dropdown:hover #shopping-cart{
-  right:-50px;
+.cart-dropdown:hover #shopping-cart{
+  right:-68px;
   top:7vh;
   z-index: 1;
   padding: 20px;
-  min-height: 400px;
-  min-width: 300px;
+  min-height: 200px;
+  min-width: 280px;
   -webkit-animation-name: navCartFade;
           animation-name: navCartFade;
   -webkit-animation-duration: 0.5s;
@@ -955,14 +955,45 @@ nav {
 .empty-cart-btn {
   --tw-border-opacity: 1;
   border-color: rgba(127, 29, 29, var(--tw-border-opacity));
+}
+
+.empty-cart-btn:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(254, 202, 202, var(--tw-border-opacity));
+}
+
+.empty-cart-btn {
   border-radius: 1rem;
   border-width: 2px;
   display: block;
+  float: right;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 2rem;
   margin-top: 1.25rem;
+}
+
+.empty-cart-btn:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.empty-cart-btn {
   padding: 1.25rem;
+  bottom: 0px;
+  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.empty-cart-btn:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(239, 68, 68, var(--tw-ring-opacity));
+}
+
+.empty-cart-btn {
   text-align: center;
 }
 
@@ -973,6 +1004,101 @@ nav {
 
 .empty-cart-btn {
   width: 100%;
+}
+
+.checkout-btn {
+  --tw-bg-opacity: 1;
+  background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
+}
+
+.checkout-btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+}
+
+.checkout-btn {
+  --tw-border-opacity: 1;
+  border-color: rgba(6, 78, 59, var(--tw-border-opacity));
+}
+
+.checkout-btn:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(167, 243, 208, var(--tw-border-opacity));
+}
+
+.checkout-btn {
+  border-radius: 1rem;
+  border-width: 2px;
+  display: block;
+  float: right;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 1.25rem;
+}
+
+.checkout-btn:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.checkout-btn {
+  padding: 1.25rem;
+  bottom: 0px;
+  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.checkout-btn:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(16, 185, 129, var(--tw-ring-opacity));
+}
+
+.checkout-btn {
+  text-align: center;
+}
+
+.checkout-btn:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.checkout-btn {
+  width: 100%;
+}
+
+.number-of-product {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 0.75rem;
+}
+
+.number-of-product:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(16, 185, 129, var(--tw-ring-opacity));
+}
+
+.number-of-product {
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+  width: 3.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {

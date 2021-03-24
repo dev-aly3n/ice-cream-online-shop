@@ -21,35 +21,48 @@
 
             <div class="logo flex justify-around items-center">
                 <img class="float-left w-16 h-16 my-2 mx-2 cursor-pointer transform rotate-12" src="img/logo2.png"
-                href="#">
+                href="javascript:void(0);">
                 <h1>Aly3n's Ice Cream</h1>
             </div>
 
             <ul class="nav-links navigation">
-                <li class="active"><a  href="#">Home</a></li>
-                <li><a href="#">Blog</a> </li>
-                <li><a href="#">Store</a> </li>
-                <li><a href="#">Contact Us</a> </li>
-                <li><a href="#">Our story</a> </li>
+                <li class="active"><a  href="javascript:void(0);">Home</a></li>
+                <li><a href="javascript:void(0);">Blog</a> </li>
+                <li><a href="javascript:void(0);">Store</a> </li>
+                <li><a href="javascript:void(0);">Contact Us</a> </li>
+                <li><a href="javascript:void(0);">Our story</a> </li>
             </ul>
             
-            <div class="card-dropdown">
+            <div class="cart-dropdown">
                 <img class="float-right w-20 cursor-pointer border-green-200 border-2 rounded-full hover:bg-gray-800
-         hover:border-gray-300 animate-pulse relative" src="img/cart.png" href="#" >
+         hover:border-gray-300 animate-pulse relative" src="img/cart.png" href="javascript:void(0);" >
          <div id="shopping-cart">
             <table id="cart-content" style="width:100%;">
                 <thead>
                     <tr class="text-white text-xl">
                         <th>image </br> <hr></th>
                         <th>name </br> <hr></th>
-                        <th>#</br> <hr></th>
                         <th>price</br> <hr></th>
+                        <th>#</br> <hr></th>
                         <th class="w-2"></th>
                     </tr>
                 </thead>
                 <tbody class="text-white"></tbody>
             </table>
-            <a href="#" id="empty-cart" class="empty-cart-btn">empty the cart</a>
+            <hr>
+            
+            <div class="w-1/2 right-0 float-right">
+                <p class="text-white mt-5  text-lg ">Price = 
+                    <span class="text-white line-through" id="total-price">0</span>$</p>
+    
+                    <p class=" mt-5 text-lg text-yellow-500">Discount = 
+                        <span class="" id="discount">0</span>$</p>
+                        <p class=" mt-5 text-2xl text-green-300">Total = 
+                            <span class="" id="final-price">0</span>$</p>
+            </div>
+            <a href="javascript:void(0);" id="checkout-cart" class="checkout-btn">Checkout</a>
+            <a href="javascript:void(0);" id="empty-cart" class="empty-cart-btn">empty the cart</a>
+        
         </div>
             </div>
 
@@ -68,13 +81,13 @@
         <div class="header-container" style=" font-family: 'Merienda', cursive;">
             <div class="header">
 
-                <h3 class="text-white text-5xl font-medium pt-36 px-10 lg:pl-32 lg:pt-72 leading-tight">Can't wait in line? Look no further. </br>
+                <h4 class="text-white text-5xl font-medium pt-36 px-10 lg:pl-32 lg:pt-72 leading-tight">Can't wait in line? Look no further. </br>
                     Your tasty Ice Cream will be there
-                    </br> within 15 minutes!</h3>
+                    </br> within 15 minutes!</h4>
                 <div class="lg:ml-96 w-max cursor-pointer mt-20">
-                    <h3 class="text-4xl bg-green-200 text-black text-center py-5 m-2 pl-14 pr-10 border-2
+                    <a href="#products" class="text-4xl bg-green-200 text-black text-center py-5 m-2 pl-14 pr-10 border-2
                 border-green-600 rounded-3xl font-medium rounded-l-none float-right shadow-2xl mt-4 hover:bg-green-500
-                hover:border-green-200"> Order Now!</h3>
+                hover:border-green-200"> Order Now!</a>
 
                     <i class="fas fa-shopping-basket fa-4x p-3 m-2 bg-green-200 rounded-full -mr-14
                 border-green-600 border-4 shadow-2xl ml-24 lg:ml-52"></i>
@@ -293,18 +306,18 @@
                 <ul class=" m-auto p-5 text-center ">
                     <li class="text-black">ICE CREAMS</li>
                     <hr>
-                    <li><a class="hover:text-pink-400" href="#">CONES</a></li>
-                    <li><a class="hover:text-pink-400" class="hover:text-green-200" href="#">SCOOPS</a></li>
-                    <li><a class="hover:text-pink-400" href="#">STICKS</a></li>
-                    <li><a class="hover:text-pink-400" href="#">SUNDAES</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">CONES</a></li>
+                    <li><a class="hover:text-pink-400" class="hover:text-green-200" href="javascript:void(0);">SCOOPS</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">STICKS</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">SUNDAES</a></li>
                 </ul>
 
                 <ul class=" m-auto p-5 text-center">
                     <li class="text-black">DESSERTS</li>
                     <hr>
-                    <li><a class="hover:text-pink-400" href="#">waffle</a></li>
-                    <li><a class="hover:text-pink-400" href="#">CAKES</a></li>
-                    <li><a class="hover:text-pink-400" href="#">BROWNIES</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">waffle</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">CAKES</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">BROWNIES</a></li>
                 </ul>
 
                 <img src="img/products/10.png" class="max-w-xs m-5 hidden xl:block  ">
@@ -312,20 +325,20 @@
                 <ul class=" m-auto p-5 text-center">
                     <li class="text-black">IMPORTANT LINKS</li>
                     <hr>
-                    <li><a class="hover:text-pink-400" href="#">BLOGS</a></li>
-                    <li><a class="hover:text-pink-400" href="#">PARTNER WITH US</a></li>
-                    <li><a class="hover:text-pink-400" href="#">PARTY ORDERS</a></li>
-                    <li><a class="hover:text-pink-400" href="#">GIFT VOUCHER</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">BLOGS</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">PARTNER WITH US</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">PARTY ORDERS</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">GIFT VOUCHER</a></li>
                 </ul>
 
                 <ul class=" m-auto p-5 text-center">
                     <li class="text-black">IMPORTANT LINKS</li>
                     <hr>
-                    <li><a class="hover:text-pink-400" href="#">OUR STORY</a></li>
-                    <li><a class="hover:text-pink-400" href="#">CONTACT US</a></li>
-                    <li><a class="hover:text-pink-400" href="#">PRIVACY POLICY</a></li>
-                    <li><a class="hover:text-pink-400" href="#">CAREERS</a></li>
-                    <li><a class="hover:text-pink-400" href="#">SITEMAP</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">OUR STORY</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">CONTACT US</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">PRIVACY POLICY</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">CAREERS</a></li>
+                    <li><a class="hover:text-pink-400" href="javascript:void(0);">SITEMAP</a></li>
                 </ul>
             </div>
             <hr>

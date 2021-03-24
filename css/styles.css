@@ -162,20 +162,20 @@
   @apply text-black text-xl p-3 m-3 ml-0 rounded-3xl font-medium float-left cursor-pointer;
 }
 
-.card-dropdown {
+.cart-dropdown {
   position: relative;
 }
 
-.card-dropdown #shopping-cart{
+.cart-dropdown #shopping-cart{
   display: none;
 }
-.card-dropdown:hover #shopping-cart{
-  right:-50px;
+.cart-dropdown:hover #shopping-cart{
+  right:-68px;
   top:7vh;
   z-index: 1;
   padding: 20px;
-  min-height: 400px;
-  min-width: 300px;
+  min-height: 200px;
+  min-width: 280px;
   animation-name: navCartFade;
   animation-duration: 0.5s; 
    @apply bg-gray-700 absolute block rounded-xl text-xl;
@@ -187,8 +187,27 @@
 
 .empty-cart-btn {
   @apply  text-2xl font-medium  p-5 mt-5 border-2  bg-red-300 hover:bg-red-600 border-red-900
-   hover:text-white rounded-2xl w-full block text-center;
+   hover:text-white hover:border-red-200 rounded-2xl w-full block text-center shadow-inner bottom-0 float-right
+   focus:outline-none focus:ring-2 focus:ring-red-500 ;
 }
+.checkout-btn {
+  @apply  text-2xl font-bold  p-5 mt-5 border-2  bg-green-300 hover:bg-green-600 border-green-900
+   hover:text-white hover:border-green-200 rounded-2xl w-full block text-center shadow-inner bottom-0 float-right
+   focus:outline-none focus:ring-2 focus:ring-green-500 ;
+}
+
+.number-of-product {
+  @apply text-black w-14 rounded-xl bg-white text-center focus:outline-none focus:ring-2 focus:ring-green-500 ;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
 
 }
 
