@@ -900,9 +900,8 @@ nav {
 .cart-dropdown:hover #shopping-cart{
   right:-68px;
   top:7vh;
-  z-index: 1;
   padding: 20px;
-  min-height: 200px;
+  min-height: 500px;
   min-width: 280px;
   -webkit-animation-name: navCartFade;
           animation-name: navCartFade;
@@ -1091,6 +1090,21 @@ nav {
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity));
   width: 3.5rem;
+}
+
+.footer-container {
+  font-family: 'Merienda', cursive;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #93c5fd;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(147, 197, 253, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #d1fae5, var(--tw-gradient-to, rgba(209, 250, 229, 0));
+  --tw-gradient-to: #6ee7b7;
+  font-weight: 100;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-bottom: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(29, 78, 216, var(--tw-text-opacity));
 }
 
 html {

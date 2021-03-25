@@ -146,7 +146,7 @@ function addToCart(productInfo) {
         <input class="number-of-product" type="number" data-id="${productInfo.id}" min='1' max='99' oninput="validity.valid||(value='');" value="${productInfo.number}">
         </td>
         <td>
-        <a class= "remove-from-cart" href="#" data-id="${productInfo.id}">×</a>
+        <a class= "remove-from-cart" href="javascript:void(0);" data-id="${productInfo.id}">×</a>
         </td>
         </tr>
         `;
@@ -197,7 +197,7 @@ function loadFromLS() {
    <input class="number-of-product" type="number" data-id="${productInfo.id}" min='1' max='99' oninput="validity.valid||(value='');" value="${productInfo.number}">
    </td>
    <td>
-   <a class= "remove-from-cart" href="#" data-id="${productInfo.id}">×</a>
+   <a class= "remove-from-cart" href="javascript:void(0);" data-id="${productInfo.id}">×</a>
    </td>
    </tr>
    `;
@@ -307,6 +307,7 @@ function totalPricefunc() {
     });
 
 }
+
 function everyClick() {
 let productList = getFromLS();
 if(productList.length === 0){
@@ -316,6 +317,6 @@ if(productList.length === 0){
 } else {
     document.getElementById('empty-cart').innerHTML = 'empty the cart';
     document.getElementById('checkout-cart').innerHTML = 'Checkout';
-    document.getElementById('checkout-cart').href = '#';
+    document.getElementById('checkout-cart').href = 'href="javascript:void(0);"';
 }
 }

@@ -172,9 +172,8 @@
 .cart-dropdown:hover #shopping-cart{
   right:-68px;
   top:7vh;
-  z-index: 1;
   padding: 20px;
-  min-height: 200px;
+  min-height: 500px;
   min-width: 280px;
   animation-name: navCartFade;
   animation-duration: 0.5s; 
@@ -198,6 +197,12 @@
 
 .number-of-product {
   @apply text-black w-14 rounded-xl bg-white text-center focus:outline-none focus:ring-2 focus:ring-green-500 ;
+}
+
+.footer-container {
+  font-family: 'Merienda', cursive;
+  @apply bg-gradient-to-r from-blue-300 via-green-100
+  to-green-300 pb-3 font-thin text-2xl text-blue-700;
 }
 
 html {
