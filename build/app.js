@@ -323,6 +323,10 @@ if(productList.length === 0){
 } else {
     document.getElementById('empty-cart').innerHTML = 'empty the cart';
     document.getElementById('checkout-cart').innerHTML = 'Checkout';
-    document.getElementById('checkout-cart').href = 'href="javascript:void(0);"';
+    document.getElementById('checkout-cart').href = 'javascript:void(0);';
 }
 }
+
+//*****************************************************************\\
+// contact aly3n via this mail: aly3n.dev [AAATTT] gmail {dot} com ||
+//*****************************************************************//

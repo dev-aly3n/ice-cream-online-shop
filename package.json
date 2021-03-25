@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
     "@tailwindcss/line-clamp": "^0.2.0",
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.6",
@@ -12,11 +13,15 @@
     "tailwindcss": "^2.0.3"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "cssnano": "^4.1.10",
     "tailwindcss-pseudo-elements": "^1.5.1"
   },
   "scripts": {
     "build": "postcss css/styles.css -o build/styles.css",
-    "watch": "postcss css/styles.css -o build/styles.css --watch"
+    "watch": "postcss css/styles.css -o build/styles.css --watch",
+    "prod": "cross-env NODE_ENV=production postcss css/styles.css -o build/styles.css",
+    "nano": "cross-env NODE_ENV=production postcss build/styles.css > build/nanostyles.css"
   },
   "keywords": [],
   "author": "",

@@ -5,9 +5,7 @@
 @tailwind utilities;
 
 
-
-@layer components {
-
+@layer components{
   /* this is the start of navbar css */
   nav {
     min-height: 8vh;
@@ -214,7 +212,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 
-}
+
 
 
 /* animation for navbar css start*/
@@ -242,4 +240,6 @@ input[type=number]::-webkit-inner-spin-button {
     opacity: 1;
     transform: translateY(0px)
   }
+}
+
 }
