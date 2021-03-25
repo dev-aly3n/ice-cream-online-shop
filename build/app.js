@@ -63,7 +63,7 @@ function eventListeners() {
     //load content from LS
     document.addEventListener('DOMContentLoaded', loadFromLS);
 
-
+// to run the the function by every click
     document.addEventListener('click', everyClick);
 
 
@@ -182,7 +182,7 @@ function loadFromLS() {
 
     //when dom load completely then we add the product of the LS into the cart again
     productList.forEach((productInfo) => {
-
+// calculate the total price
         totalPrice = totalPrice + Number(productInfo.number) * Number(productInfo.price.split('$')[0]);
         
         // create a row
@@ -203,12 +203,14 @@ function loadFromLS() {
    `;
         shoppingCartContent.appendChild(row);
     });
+    //append total price and discount and final price to the spans
     document.querySelector('#total-price').innerHTML = totalPrice.toFixed(2);
     let fdiscount = totalPrice.toFixed(2) * 0.15;
     document.querySelector('#discount').innerHTML = fdiscount.toFixed(2);
     let fPrice = totalPrice.toFixed(2) - totalPrice.toFixed(2) * 0.15;
     document.querySelector('#final-price').innerHTML = fPrice.toFixed(2);
 
+    //run every click to detect every change to chenge to checkout button textcontent
     everyClick();
 }
 
@@ -234,13 +236,14 @@ function removeProduct(e) {
     productList = getFromLS();
     if (productList.length === 0) {
         let totalPrice = 0;
-        document.querySelector('#total-price').innerHTML = totalPrice;
+//append total price and discount and final price to the spans if one of product removed
         document.querySelector('#total-price').innerHTML = totalPrice.toFixed(2);
     let fdiscount = totalPrice.toFixed(2) * 0.15;
     document.querySelector('#discount').innerHTML = fdiscount.toFixed(2);
     let fPrice = totalPrice.toFixed(2) - totalPrice.toFixed(2) * 0.15;
     document.querySelector('#final-price').innerHTML = fPrice.toFixed(2);
     } else {
+        //append total price and discount and final price to the spans if one of product removed
         let totalPrice = 0;
         productList.forEach(i => {
             totalPrice = totalPrice + Number(i.number) * Number(i.price.split('$')[0])
@@ -251,7 +254,6 @@ function removeProduct(e) {
     document.querySelector('#final-price').innerHTML = fPrice.toFixed(2);
         });
     }
-
 }
 
 //removing the whole cart and make it empty
@@ -261,8 +263,8 @@ function emptyCart() {
     }
     //remove from LS
     localStorage.clear();
+    //append total price and discount and final price to the spans if all product removed
     let totalPrice = 0;
-    document.querySelector('#total-price').innerHTML = totalPrice;
     document.querySelector('#total-price').innerHTML = totalPrice.toFixed(2);
     let fdiscount = totalPrice.toFixed(2) * 0.15;
     document.querySelector('#discount').innerHTML = fdiscount.toFixed(2);
@@ -282,6 +284,7 @@ function changeNumberByArrows(e) {
             }
 
             //to change the total price of the cart after clicking on arrows
+            ////append total price and discount and final price to the spans
             totalPrice = totalPrice + Number(el.number) * Number(el.price.split('$')[0]);
             document.querySelector('#total-price').innerHTML = totalPrice.toFixed(2);
     let fdiscount = totalPrice.toFixed(2) * 0.15;
@@ -289,11 +292,13 @@ function changeNumberByArrows(e) {
     let fPrice = totalPrice.toFixed(2) - totalPrice.toFixed(2) * 0.15;
     document.querySelector('#final-price').innerHTML = fPrice.toFixed(2);
         });
+        //update the list after clicking on the arrows
         localStorage.setItem('products', JSON.stringify(productList));
 
     }
 }
 
+// to calculate the total price and append it to the spans
 function totalPricefunc() {
     let productList = getFromLS();
     let totalPrice = 0;
@@ -308,6 +313,7 @@ function totalPricefunc() {
 
 }
 
+// to detect every change and the change the text content of the checkout button
 function everyClick() {
 let productList = getFromLS();
 if(productList.length === 0){

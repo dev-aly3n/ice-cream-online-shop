@@ -913,6 +913,8 @@ nav {
   display: block;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
 }
 

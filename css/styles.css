@@ -177,7 +177,7 @@
   min-width: 280px;
   animation-name: navCartFade;
   animation-duration: 0.5s; 
-   @apply bg-gray-700 absolute block rounded-xl text-xl;
+   @apply bg-gray-700 absolute block rounded-xl text-xl mx-auto;
 }
 
 .remove-from-cart {
