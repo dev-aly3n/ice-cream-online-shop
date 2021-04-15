@@ -1,3 +1,12 @@
+#ice-cream-online-shop
+A responsive & modern ice cream shop whit a super light style files.
+
+
+
+/// © 2021 aly3n-dev ///
+
+
+
 Hi there!
 
 this is my second web project.
