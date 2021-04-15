@@ -1,5 +1,5 @@
 #ice-cream-online-shop
-A responsive & modern ice cream shop whit a super light style files.
+A responsive & modern ice cream shop with a super light style files.
 
 
 
