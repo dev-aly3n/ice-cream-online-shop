@@ -1,3 +1,12 @@
+#ice-cream-online-shop
+A responsive & modern ice cream shop with a super light style files.
+
+
+
+/// © 2021 aly3n-dev ///
+
+
+
 Hi there!
 
 this is my second web project.
@@ -9,7 +18,7 @@ js lines  : 332 -
 html lines: 352 -
 css lines : 1400
 
-this is a simple modern and responsive online shope.
+this is a simple modern and responsive online shop.
 
 featurs: responsive - modern design - live calculator - very very light style files
 
