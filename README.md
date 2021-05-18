@@ -3,7 +3,7 @@ A responsive & modern ice cream shop with a super light style files.
 
 
 
-/// © 2021 aly3n-dev ///
+/// © 2021 dev-aly3n ///
 
 
 
@@ -20,7 +20,7 @@ css lines : 1400
 
 this is a simple modern and responsive online shop.
 
-featurs: responsive - modern design - live calculator - very very light style files
+features: responsive - modern design - live calculator - very very light style files
 
 anyway thank you to visiting my project. have a good time.
 

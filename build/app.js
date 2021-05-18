@@ -185,6 +185,7 @@ function loadFromLS() {
 // calculate the total price
         totalPrice = totalPrice + Number(productInfo.number) * Number(productInfo.price.split('$')[0]);
         
+        /// © 2021 dev-aly3n ///
         // create a row
         let row = document.createElement('tr');
         //append data to row
@@ -297,6 +298,7 @@ function changeNumberByArrows(e) {
 
     }
 }
+// /// © 2021 dev-aly3n ///
 
 // to calculate the total price and append it to the spans
 function totalPricefunc() {
@@ -328,5 +330,5 @@ if(productList.length === 0){
 }
 
 //*****************************************************************\\
-// contact aly3n via this mail: aly3n.dev [AAATTT] gmail {dot} com ||
+// contact aly3n via this mail: dev.aly3n [AAATTT] gmail {dot} com ||
 //*****************************************************************//
