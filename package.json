@@ -18,10 +18,10 @@
     "tailwindcss-pseudo-elements": "^1.5.1"
   },
   "scripts": {
-    "build": "postcss css/styles.css -o build/styles.css",
-    "watch": "postcss css/styles.css -o build/styles.css --watch",
-    "prod": "cross-env NODE_ENV=production postcss css/styles.css -o build/styles.css",
-    "nano": "cross-env NODE_ENV=production postcss build/styles.css > build/nanostyles.css"
+    "build": "postcss css/styles.css -o public/styles.css",
+    "watch": "postcss css/styles.css -o public/styles.css --watch",
+    "prod": "cross-env NODE_ENV=production postcss css/styles.css -o public/styles.css",
+    "nano": "cross-env NODE_ENV=production postcss public/styles.css > public/nanostyles.css"
   },
   "keywords": [],
   "author": "",
