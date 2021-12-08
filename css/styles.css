@@ -4,8 +4,12 @@
 
 @tailwind utilities;
 
+body {
+  @apply bg-white;
+}
 
 @layer components{
+
   /* this is the start of navbar css */
   nav {
     min-height: 8vh;
